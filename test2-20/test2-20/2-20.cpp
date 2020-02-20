@@ -118,3 +118,107 @@
 //
 //	return 0;
 //}
+//int main()
+//{
+//	int i, j, k,n,x,y, tmp;
+//	printf("请输入两个数：");
+//	scanf_s("%d %d", &i, &j);
+//	x = i;
+//	y = j;
+//	if (i > j)
+//	{
+//
+//		tmp = i;
+//		i = j;
+//		j = tmp;
+//	}
+//	while (i%j)
+//	{
+//		k = i%j;
+//		i = j;
+//		j = k;
+//	
+//	}
+//	n = x*y / k;
+//	printf("最大公约数=%d", k);
+//	printf("最小公倍数=%d", n);
+//
+//	return 0;
+//
+//
+//}
+//int main()
+//{
+//	int a, b,x,y;
+//	printf("请输入两个数：");
+//	scanf_s("%d %d", &a, &b);
+//	x = a, y = b;
+//	while (a != b)
+//	{
+//		while (a > b)
+//		{
+//			a -= b;
+//		}
+//		while (a < b)
+//		{
+//			b -= a;
+//		}
+//	
+//	}
+//	printf("最大公约数=%d", a);
+//	printf("最小公倍数=%d", x*y / a);
+//	return 0;
+//}
+//输出9 * 9乘法口诀表
+//int main()
+//{
+//	int i,j;
+//	for (i = 1; i <= 9; i++)
+//	{
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%d  ", j, i, j*i);
+//		
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+//求10 个整数中最大值
+
+int main()
+
+{
+
+	int a[10];
+
+	int i, max;
+
+	for (i = 0; i <= 9; i++)
+
+	{
+
+		scanf_s("%d", &a[i]);
+
+	}
+
+	max = a[0];
+
+	for (i = 0; i <= 9; i++)
+
+	{
+
+		if (max < a[i])
+
+			max = a[i];
+
+	}
+
+	printf("最大值为%d", max);
+
+
+
+	return 0;
+
+}
